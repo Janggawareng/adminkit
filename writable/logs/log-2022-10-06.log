@@ -1,0 +1,34 @@
+CRITICAL - 2022-10-06 09:12:37 --> Undefined array key "username"
+in APPPATH\Controllers\Login.php on line 18.
+ 1 APPPATH\Controllers\Login.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "username"', 'APPPATH\\Controllers\\Login.php', 18)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Login->auth()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-06 15:44:00 --> Undefined variable $user
+in APPPATH\Views\layout\layout_admin.php on line 50.
+ 1 APPPATH\Views\layout\layout_admin.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user', 'APPPATH\\Views\\layout\\layout_admin.php', 50)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\layout_admin.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layout/layout_admin', [], true)
+ 5 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('admin/index', [], true)
+ 6 APPPATH\Controllers\Admin.php(9): view('admin/index')
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin->index()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-06 15:47:29 --> Trying to access array offset on value of type null
+in APPPATH\Views\layout\layout_admin.php on line 50.
+ 1 APPPATH\Views\layout\layout_admin.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\layout\\layout_admin.php', 50)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\layout_admin.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layout/layout_admin', [], true)
+ 5 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('admin/index', [], true)
+ 6 APPPATH\Controllers\Admin.php(14): view('admin/index', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin->index()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

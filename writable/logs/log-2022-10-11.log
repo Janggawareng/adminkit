@@ -1,0 +1,133 @@
+CRITICAL - 2022-10-11 11:35:51 --> Invalid file: App\Views\layouts\my_page.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('App\\Views\\layouts\\my_page.php')
+ 2 SYSTEMPATH\Pager\Pager.php(126): CodeIgniter\View\View->render('App\\Views\\layouts\\my_page', null, false)
+ 3 SYSTEMPATH\Pager\Pager.php(83): CodeIgniter\Pager\Pager->displayLinks('app', 'my_page')
+ 4 APPPATH\Views\admin\index.php(42): CodeIgniter\Pager\Pager->links('app', 'my_page')
+ 5 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\index.php')
+ 6 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('admin/index', [], true)
+ 8 APPPATH\Controllers\Admin.php(32): view('admin/index', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin->index()
+10 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-11 11:49:58 --> Invalid file: admin/app_detail.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/app_detail.php')
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('admin/app_detail', [], true)
+ 3 APPPATH\Controllers\Admin.php(47): view('admin/app_detail', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin->app_detail('11')
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-11 11:51:52 --> Undefined variable $user
+in APPPATH\Views\layout\layout_admin.php on line 50.
+ 1 APPPATH\Views\layout\layout_admin.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user', 'APPPATH\\Views\\layout\\layout_admin.php', 50)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\layout_admin.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layout/layout_admin', [], true)
+ 5 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('admin/app_detail', [], true)
+ 6 APPPATH\Controllers\Admin.php(47): view('admin/app_detail', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin->app_detail('23')
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-11 11:56:39 --> Undefined array key "page_app"
+in APPPATH\Controllers\Admin.php on line 40.
+ 1 APPPATH\Controllers\Admin.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "page_app"', 'APPPATH\\Controllers\\Admin.php', 40)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin->app_detail('11')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-11 13:38:03 --> Unsupported operand types: string * int
+in APPPATH\Views\admin\index.php on line 31.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('admin/index', [], true)
+ 4 APPPATH\Controllers\Admin.php(42): view('admin/index', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin->index()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-11 13:41:05 --> syntax error, unexpected token ";", expecting "]"
+in APPPATH\Controllers\Admin.php on line 53.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Admin.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin')
+ 4 SYSTEMPATH\CodeIgniter.php(857): class_exists('\\App\\Controllers\\Admin', true)
+ 5 SYSTEMPATH\CodeIgniter.php(444): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-11 13:41:18 --> Undefined variable $last_url
+in APPPATH\Controllers\Admin.php on line 56.
+ 1 APPPATH\Controllers\Admin.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $last_url', 'APPPATH\\Controllers\\Admin.php', 56)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin->app_detail('1')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-11 14:26:36 --> CodeIgniter\Database\BaseBuilder::like(): Argument #2 ($match) must be of type string, null given, called in C:\Users\adhie\OneDrive\Desktop\appstarter\vendor\codeigniter4\framework\system\Model.php on line 772
+in SYSTEMPATH\Database\BaseBuilder.php on line 954.
+ 1 SYSTEMPATH\Model.php(772): CodeIgniter\Database\BaseBuilder->like('nama_app', null)
+ 2 APPPATH\Models\AppModel.php(30): CodeIgniter\Model->__call('like', [...])
+ 3 APPPATH\Controllers\Admin.php(24): App\Models\AppModel->search(null)
+ 4 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-11 14:26:48 --> CodeIgniter\Database\BaseBuilder::like(): Argument #2 ($match) must be of type string, null given, called in C:\Users\adhie\OneDrive\Desktop\appstarter\vendor\codeigniter4\framework\system\Model.php on line 772
+in SYSTEMPATH\Database\BaseBuilder.php on line 954.
+ 1 SYSTEMPATH\Model.php(772): CodeIgniter\Database\BaseBuilder->like('nama_app', null)
+ 2 APPPATH\Models\AppModel.php(30): CodeIgniter\Model->__call('like', [...])
+ 3 APPPATH\Controllers\Admin.php(24): App\Models\AppModel->search(null)
+ 4 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-11 14:28:57 --> syntax error, unexpected token "}", expecting ";"
+in APPPATH\Models\AppModel.php on line 31.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Models\\AppModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\AppModel')
+ 3 APPPATH\Controllers\Admin.php(14): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\AppModel')
+ 4 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Admin->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-11 14:35:58 --> Call to a member function match() on null
+in APPPATH\Models\AppModel.php on line 30.
+ 1 APPPATH\Controllers\Admin.php(24): App\Models\AppModel->search('Ally')
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-11 15:48:18 --> Undefined array key "status_app"
+in APPPATH\Controllers\Admin.php on line 72.
+ 1 APPPATH\Controllers\Admin.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "status_app"', 'APPPATH\\Controllers\\Admin.php', 72)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin->app_create()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-11 16:02:56 --> Undefined array key "created_app"
+in APPPATH\Views\admin\index.php on line 91.
+ 1 APPPATH\Views\admin\index.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "created_app"', 'APPPATH\\Views\\admin\\index.php', 91)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('admin/index', [], true)
+ 5 APPPATH\Controllers\Admin.php(45): view('admin/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
